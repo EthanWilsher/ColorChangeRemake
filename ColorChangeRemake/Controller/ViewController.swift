@@ -24,9 +24,9 @@ class ViewController: UIViewController
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
-        view.backgroundColor = createColor()
-            firstButton.setTitleColor(createColor(), for: .normal)
-            firstButton.backgroundColor = createColor()
+        view.backgroundColor = createRandomColor()
+            firstButton.setTitleColor(createRandomColor(), for: .normal)
+            firstButton.backgroundColor = createRandomColor()
     }
     
 //    if (firstButton.backgroundColor == .red)

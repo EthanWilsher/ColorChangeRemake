@@ -55,20 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				396F562E1F8D03D200E055F7 /* Controller */,
-				396F561F1F8D039F00E055F7 /* Main.storyboard */,
-				396F56221F8D039F00E055F7 /* Assets.xcassets */,
-				396F56241F8D039F00E055F7 /* LaunchScreen.storyboard */,
-				396F562D1F8D03BD00E055F7 /* Settings */,
+				396F56301F8D190A00E055F7 /* Resources */,
+				396F562F1F8D18F400E055F7 /* View */,
 			);
 			path = ColorChangeRemake;
-			sourceTree = "<group>";
-		};
-		396F562D1F8D03BD00E055F7 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				396F56271F8D039F00E055F7 /* Info.plist */,
-			);
-			path = Settings;
 			sourceTree = "<group>";
 		};
 		396F562E1F8D03D200E055F7 /* Controller */ = {
@@ -78,6 +68,24 @@
 				396F561B1F8D039F00E055F7 /* AppDelegate.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		396F562F1F8D18F400E055F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				396F561F1F8D039F00E055F7 /* Main.storyboard */,
+				396F56241F8D039F00E055F7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		396F56301F8D190A00E055F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				396F56221F8D039F00E055F7 /* Assets.xcassets */,
+				396F56271F8D039F00E055F7 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -27,7 +27,7 @@
                                 </state>
                                 <connections>
                                     <action selector="ButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89o-W3-Y7k"/>
-                                    <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ya7-9g-LkD"/>
+                                    <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dgz-Fn-cVx"/>
                                 </connections>
                             </button>
                         </subviews>
