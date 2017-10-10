@@ -21,9 +21,10 @@ class ViewController: UIViewController
         
     }
 
-    @IBAction func firstMethod(_ sender: UIButton)
-    {
-        if (firstButton.backgroundColor == .red)
+    
+    @IBAction func firstMethod(_ sender: UIButton) {
+    }
+    if (firstButton.backgroundColor == .red)
         {
             firstButton.backgroundColor = .purple
         }
@@ -32,7 +33,7 @@ class ViewController: UIViewController
             firstButton.backgroundColor = .red
         }
         view.backgroundColor = createRandomColor()
-    }
+    
     
     
     private func createRandomColor() -> UIColor
