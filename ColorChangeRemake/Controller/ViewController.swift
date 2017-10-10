@@ -22,27 +22,32 @@ class ViewController: UIViewController
     }
 
     
-    @IBAction func firstMethod(_ sender: UIButton) {
+    @IBAction func firstMethod(_ sender: UIButton)
+    {
+        view.backgroundColor = createColor()
+            firstButton.setTitleColor(createColor(), for: .normal)
+            firstButton.backgroundColor = createColor()
     }
-    if (firstButton.backgroundColor == .red)
-        {
-            firstButton.backgroundColor = .purple
-        }
-        else
-        {
-            firstButton.backgroundColor = .red
-        }
-        view.backgroundColor = createRandomColor()
+    
+//    if (firstButton.backgroundColor == .red)
+//        {
+//            firstButton.backgroundColor = .purple
+//        }
+//        else
+//        {
+//            firstButton.backgroundColor = .red
+//        }
+    
     
     
     
     private func createRandomColor() -> UIColor
     {
-        let newColor :UIColor
+        
         let redAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
         let greenAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
         let blueAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-        newColor = UIColor(red: redAmount, green: greenAmount, blue: blueAmount, alpha: CGFloat(1.0))
+        let newColor = UIColor(red: redAmount, green: greenAmount, blue: blueAmount, alpha: CGFloat(1.0))
         return newColor
     }
     
