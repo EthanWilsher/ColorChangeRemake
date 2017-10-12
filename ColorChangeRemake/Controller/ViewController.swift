@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController
 {
     
+   lazy var colorTool : ColorTools = ColorTools()
+    
    
     @IBOutlet weak var firstButton: UIButton!
     
@@ -26,9 +28,9 @@ class ViewController: UIViewController
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
-        view.backgroundColor = createRandomColor()
-            firstButton.setTitleColor(createRandomColor(), for: .normal)
-            firstButton.backgroundColor = createRandomColor()
+        view.backgroundColor = colorTool.createRandomColor()
+            firstButton.setTitleColor(colorTool.createRandomColor(), for: .normal)
+            firstButton.backgroundColor = colorTool.createRandomColor()
     }
     
 
@@ -50,15 +52,15 @@ class ViewController: UIViewController
     
     
     
-    private func createRandomColor() -> UIColor
-    {
-        
-        let redAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-        let greenAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-        let blueAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-        let newColor = UIColor(red: redAmount, green: greenAmount, blue: blueAmount, alpha: CGFloat(1.0))
-        return newColor
-    }
+//    private func createRandomColor() -> UIColor
+//    {
+//
+//        let redAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
+//        let greenAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
+//        let blueAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
+//        let newColor = UIColor(red: redAmount, green: greenAmount, blue: blueAmount, alpha: CGFloat(1.0))
+//        return newColor
+//    }
     
     
     
