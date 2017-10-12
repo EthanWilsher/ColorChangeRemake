@@ -26,7 +26,6 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="ButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89o-W3-Y7k"/>
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dgz-Fn-cVx"/>
                                 </connections>
                             </button>
@@ -42,7 +41,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="ButtonOutlet" destination="Onl-E9-7Cl" id="Phd-b7-J5A"/>
                         <outlet property="firstButton" destination="Onl-E9-7Cl" id="8Sk-qa-7E1"/>
                         <outlet property="mySwitch" destination="p9j-Rc-woy" id="oyp-Xp-bMY"/>
                     </connections>
