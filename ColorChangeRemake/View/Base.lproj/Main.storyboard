@@ -30,6 +30,13 @@
                                     <action selector="firstMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dgz-Fn-cVx"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p9j-Rc-woy">
+                                <rect key="frame" x="163" y="459" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchAct:" destination="BYZ-38-t0r" eventType="valueChanged" id="N0x-s2-iS8"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -37,6 +44,7 @@
                     <connections>
                         <outlet property="ButtonOutlet" destination="Onl-E9-7Cl" id="Phd-b7-J5A"/>
                         <outlet property="firstButton" destination="Onl-E9-7Cl" id="8Sk-qa-7E1"/>
+                        <outlet property="mySwitch" destination="p9j-Rc-woy" id="oyp-Xp-bMY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

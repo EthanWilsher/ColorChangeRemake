@@ -20,23 +20,7 @@ class ViewController: UIViewController
         super.viewDidLoad()
         
     }
-    @IBAction func mySwitch(_ sender: UISwitch) {
-    }
     
-    @IBAction func buttonClicked(sender: UIButton)
-    {
-        if mySwitch.on
-        {
-            myTextField.text = "The Switch is off"
-            println("Switch is on")
-            mySwitch.setOn(false, animated:true)
-        }
-        else
-        {
-            myTextField.text = "The Switch is on"
-            mySwitch.setOn(true, animated:true)
-        }
-    }
     
     
     
@@ -47,14 +31,21 @@ class ViewController: UIViewController
             firstButton.backgroundColor = createRandomColor()
     }
     
-//    if (firstButton.backgroundColor == .red)
-//        {
-//            firstButton.backgroundColor = .purple
-//        }
-//        else
-//        {
-//            firstButton.backgroundColor = .red
-//        }
+
+    @IBOutlet weak var mySwitch: UISwitch!
+    @IBAction func switchAct(_ sender: Any)
+    {
+        if mySwitch.isOn
+        {
+            firstButton.isHidden = false
+        }
+        else
+        {
+            firstButton.isHidden = true
+        }
+    
+    
+    }
     
     
     
