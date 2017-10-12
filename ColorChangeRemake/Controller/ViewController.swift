@@ -20,7 +20,25 @@ class ViewController: UIViewController
         super.viewDidLoad()
         
     }
-
+    @IBAction func mySwitch(_ sender: UISwitch) {
+    }
+    
+    @IBAction func buttonClicked(sender: UIButton)
+    {
+        if mySwitch.on
+        {
+            myTextField.text = "The Switch is off"
+            println("Switch is on")
+            mySwitch.setOn(false, animated:true)
+        }
+        else
+        {
+            myTextField.text = "The Switch is on"
+            mySwitch.setOn(true, animated:true)
+        }
+    }
+    
+    
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
